@@ -1,0 +1,20 @@
+{
+	"localhost:8082":{
+		"address":"localhost:8082",
+		"name":"node2",
+		"private_key":"3041020100301306072a8648ce3d020106082a8648ce3d0301070427302502010104203fcc04c670878629cb82f260750b3ba2bcb426d8131e21dca621d9a71ccb3bcb",
+		"public_key":"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEvngZVOjnsS9qbl16Kh3ykTLatDbSkJ8S/WxAr4oXlFJJEm1tsi5EutqncAxQpKBHLHvPZL/EChQMHGq+MySI5w=="
+	},
+	"localhost:8081":{
+		"address":"localhost:8081",
+		"name":"node1",
+		"private_key":"3041020100301306072a8648ce3d020106082a8648ce3d030107042730250201010420dd855ee7d75e15538fcef1f60ce08321befb8b498810ef84dd289c18823e58d9",
+		"public_key":"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEttSmfs/qqwWgKtxWgM27Q2k1VnwUqvJvI3rrKtTzfoccMwCnWdYsHG4B68h5eytJLw1PapSYXtjJoqK993kN9g=="
+	},
+	"localhost:8083":{
+		"address":"localhost:8083",
+		"name":"validator",
+		"private_key":"3041020100301306072a8648ce3d020106082a8648ce3d030107042730250201010420947c893fdedcf6a45b1df49754eec701176d5cc5f9fc9d28e99bf0c2b935cdc2",
+		"public_key":"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEx3F1Tt6qhOtdGcWqSKNkvYLcIiJ3uS6E8k8Kw6/lBY5bsyPHRXE67s40jOEJwSAWl8qzYJQqXqkDAEk8ScNLVw=="
+	},
+}

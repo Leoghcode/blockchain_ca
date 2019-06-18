@@ -4,6 +4,7 @@ import com.example.blockchain.CA.Entity.CAEntity;
 import com.example.blockchain.CA.Entity.PublicCAEntity;
 import com.example.blockchain.CA.Service.CAService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -38,5 +39,13 @@ public class CAController {
     @RequestMapping(value = "getByName", method = RequestMethod.GET)
     public PublicCAEntity getAllEntity(@RequestParam String name) {
         return caService.getClientByName(name);
+    }
+
+    @RequestMapping(value = "save", method = RequestMethod.GET)
+    public HttpStatus saveClients() {
+        if(caService.saveClients()) {
+            return HttpStatus.OK;
+        }
+        return HttpStatus.INTERNAL_SERVER_ERROR;
     }
 }
