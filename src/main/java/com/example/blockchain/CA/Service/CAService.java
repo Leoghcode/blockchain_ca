@@ -3,6 +3,7 @@ package com.example.blockchain.CA.Service;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.TypeReference;
 import com.example.blockchain.CA.Entity.CAEntity;
 import com.example.blockchain.CA.Entity.PublicCAEntity;
 import org.apache.commons.io.IOUtils;
@@ -29,7 +30,7 @@ public class CAService {
             InputStream is = new FileInputStream(file);
             String clients = IOUtils.toString(is, "utf8");
             is.close();
-            JSONObject jsonObject = JSONObject.parseObject(clients);
+            LinkedHashMap<String, Object> jsonObject = JSONObject.parseObject(clients, new TypeReference<LinkedHashMap<String, Object>>(){});
             System.out.println(jsonObject);
             for(String addr : jsonObject.keySet()) {
                 CAEntity caEntity = JSONObject.parseObject(jsonObject.get(addr).toString(), CAEntity.class);
@@ -88,5 +89,23 @@ public class CAService {
             }
         }
         return new PublicCAEntity("", "", "");
+    }
+
+    public Boolean isInspector(String message, String signature) {
+        return isSomeone("质检处", message, signature);
+    }
+    public Boolean isValidator(String message, String signature) {
+        return isSomeone("认证机构", message, signature);
+    }
+
+    private Boolean isSomeone(String name, String message, String signature) {
+        CAEntity inspector = null;
+        for(String address : this.clients.keySet()) {
+            CAEntity caEntity = this.clients.get(address);
+            if(caEntity.getName().equals(name)) {
+                inspector = caEntity;
+            }
+        }
+        return KeyUtil.verify(inspector.getPublic_key(), message, signature);
     }
 }

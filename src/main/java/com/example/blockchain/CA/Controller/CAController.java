@@ -48,4 +48,20 @@ public class CAController {
         }
         return HttpStatus.INTERNAL_SERVER_ERROR;
     }
+
+    @RequestMapping(value = "isInspector", method = RequestMethod.POST)
+    public Boolean isInspector(@RequestBody Map<String, String> request) {
+        System.out.println("in isInspector");
+        String message = request.get("message").toString();
+        String signature = request.get("signature").toString();
+        return  caService.isInspector(message, signature);
+    }
+
+    @RequestMapping(value = "isValidator", method = RequestMethod.POST)
+    public Boolean isValidator(@RequestBody Map<String, String> request) {
+        System.out.println("in isValidator");
+        String message = request.get("message").toString();
+        String signature = request.get("signature").toString();
+        return  caService.isValidator(message, signature);
+    }
 }
