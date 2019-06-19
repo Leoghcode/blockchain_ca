@@ -95,7 +95,13 @@ public class CAService {
         return isSomeone("质检处", message, signature);
     }
     public Boolean isValidator(String message, String signature) {
-        return isSomeone("认证机构", message, signature);
+        boolean result = false;
+        String[] names = {"认证机构", "认证机构2", "认证机构3"};
+        for(String name : names) {
+            result = isSomeone(name, message, signature);
+            if(result) return result;
+        }
+        return result;
     }
 
     private Boolean isSomeone(String name, String message, String signature) {

@@ -19,9 +19,12 @@ public class CAEntity {
         String name = "";
         int port = Integer.parseInt(address.split(":")[1]);
         switch (port) {
-            case 8081: name = "node1";break;
-            case 8082: name = "node2";break;
-            case 8083: name = "validator";break;
+            case 8081: name = "生产商";break;
+            case 8082: name = "质检处";break;
+            case 8083: name = "仓库";break;
+            case 8084: name = "认证机构";break;
+            case 8085: name = "认证机构2";break;
+            case 8086: name = "认证机构3";break;
         }
         this.address = address;
         this.name = name;
