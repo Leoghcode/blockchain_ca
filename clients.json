@@ -1,21 +1,15 @@
 {
-	"localhost:8082":{
-		"address":"localhost:8082",
-		"name":"质检处",
-		"private_key":"3041020100301306072a8648ce3d020106082a8648ce3d0301070427302502010104208b008ddf8a948066b332f14c91c1026a422ace65fa88221a7bb6f02a1091a248",
-		"public_key":"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEachaM4hVzq+ClOQ72cOlQFqp3JpCiAE0ptnsojzmzKe7czFb2wbs8Ml7lDJE8747KwGFYBb2MNDQoAaX3bRjsw=="
-	},
 	"localhost:8081":{
 		"address":"localhost:8081",
 		"name":"生产商",
 		"private_key":"3041020100301306072a8648ce3d020106082a8648ce3d0301070427302502010104200aff6fe2ddb4d8fd27ca23aab5d824c81431b79988466437bc7308b89b6a906b",
 		"public_key":"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEoQ6rG0FWtan+8th1x/maNLw3nSQRThmuXkoMINwuvVU0CGLRHtIRWFM/iEU1ZgrK1ndobAGmG8E8CFZjQ4ogQQ=="
 	},
-	"localhost:8084":{
-		"address":"localhost:8084",
-		"name":"认证机构",
-		"private_key":"3041020100301306072a8648ce3d020106082a8648ce3d0301070427302502010104203780722cc92d82eb58103ecb417a52407820dd81bccf13665d345ac14d172f90",
-		"public_key":"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEzKPMdFNRyk+L840h7nhUdMaR6cVQSeCm9FZNL8qxDSmIB1d2CFPOcs01P/mGwjxBbqkVZ7S8k9H+Pnv1xfpojA=="
+	"localhost:8082":{
+		"address":"localhost:8082",
+		"name":"质检处",
+		"private_key":"3041020100301306072a8648ce3d020106082a8648ce3d0301070427302502010104208b008ddf8a948066b332f14c91c1026a422ace65fa88221a7bb6f02a1091a248",
+		"public_key":"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEachaM4hVzq+ClOQ72cOlQFqp3JpCiAE0ptnsojzmzKe7czFb2wbs8Ml7lDJE8747KwGFYBb2MNDQoAaX3bRjsw=="
 	},
 	"localhost:8083":{
 		"address":"localhost:8083",
@@ -23,16 +17,22 @@
 		"private_key":"3041020100301306072a8648ce3d020106082a8648ce3d03010704273025020101042031193f2e78e963157ba042263dabd284393492740fb934e1aa8adada8f3d1a67",
 		"public_key":"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnoj2UZ+EOZNSDamHOFl5izPnZZc7v+PsAY2TKlDygvmqvFzZvoqXuGmwUILeAjsshDmHlQa5M3X7BcEvXoa5og=="
 	},
-	"localhost:8086":{
-		"address":"localhost:8086",
-		"name":"认证机构3",
-		"private_key":"3041020100301306072a8648ce3d020106082a8648ce3d030107042730250201010420574ea9e88a58febc3a05db72f3795d96302f712be020a3a0c72ba0018a4733e6",
-		"public_key":"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAETKdooa6h8FUjwvRti9y4jBM+2N2Hqq2kjeEgGF742OUpXr2IsdKEPtC6DlsSLJsOCPcXhkugWa/VLL9vOHIEng=="
+	"localhost:8084":{
+		"address":"localhost:8084",
+		"name":"认证机构",
+		"private_key":"3041020100301306072a8648ce3d020106082a8648ce3d0301070427302502010104203780722cc92d82eb58103ecb417a52407820dd81bccf13665d345ac14d172f90",
+		"public_key":"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEzKPMdFNRyk+L840h7nhUdMaR6cVQSeCm9FZNL8qxDSmIB1d2CFPOcs01P/mGwjxBbqkVZ7S8k9H+Pnv1xfpojA=="
 	},
 	"localhost:8085":{
 		"address":"localhost:8085",
 		"name":"认证机构2",
 		"private_key":"3041020100301306072a8648ce3d020106082a8648ce3d0301070427302502010104202fddbd7c7004c98adc04f19763cb7abd5f961c464c63400c069dd1d4c7752279",
 		"public_key":"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnybwLbLms1P978O7utgwjaxIAke0/ti3kJL2ImXw0IkyXkHyjyTI6V9/Z5ZkVGq/j5UsZj+zMued8LlVBrg1LA=="
+	},
+	"localhost:8086": {
+		"address": "localhost:8086",
+		"name": "认证机构3",
+		"private_key": "3041020100301306072a8648ce3d020106082a8648ce3d030107042730250201010420574ea9e88a58febc3a05db72f3795d96302f712be020a3a0c72ba0018a4733e6",
+		"public_key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAETKdooa6h8FUjwvRti9y4jBM+2N2Hqq2kjeEgGF742OUpXr2IsdKEPtC6DlsSLJsOCPcXhkugWa/VLL9vOHIEng=="
 	}
 }
